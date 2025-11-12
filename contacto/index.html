@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <title>Contacto - Asier's Agency</title>
+</head>
+<body class="contacto-bg">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../nosotros/index.html">Quienes somos</a></li>
+                <li><a href="../blog/index.html">Blog</a></li>
+                <li><a href="../galeria/index.html">Galería</a></li>
+                <li><a href="../videos/index.html">Videos</a></li>
+                <li><a href="index.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="contacto-container">
+        <div class="contacto-header">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para hacer realidad tus proyectos de marketing digital</p>
+        </div>
+        
+        <div class="contacto-content">
+            <!-- Información de Contacto -->
+            <div class="contacto-info">
+                <h2><i class="fas fa-address-book"></i> Información de Contacto</h2>
+                <table class="info-table">
+                    <tr>
+                        <td class="label">Dirección:</td>
+                        <td>Av. Arequipa 1426<br>Oficina: 405</td>
+                    </tr>
+                    <tr>
+                        <td class="label">Celular:</td>
+                        <td><a href="tel:963258741" style="color: var(--primary-color);">963258741</a></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Correo:</td>
+                        <td><a href="mailto:info@asiers.com" style="color: var(--primary-color);">info@asiers.com</a></td>
+                    </tr>
+                    <tr>
+                        <td class="label">Horario de atención:</td>
+                        <td>Lunes a Sábado<br>9:00 AM - 6:00 PM</td>
+                    </tr>
+                </table>
+                
+                <div style="margin: 0 auto;">
+                    <img src="../img/imagen-contacto.webp" alt="Oficina Asier's Agency" style="width: 100%;    border-radius: 10px; margin-top: 1rem;">
+                </div>
+            </div>
+            
+            <!-- Formulario de Contacto -->
+            <div class="contacto-form">
+                <h2><i class="fas fa-paper-plane"></i> Envíanos un Mensaje</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre y Apellido: *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="celular">Celular: *</label>
+                        <input type="tel" id="celular" name="celular" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico: *</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="empresa">Empresa:</label>
+                        <input type="text" id="empresa" name="empresa">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="website">Sitio Web o Redes Sociales (opcional):</label>
+                        <input type="url" id="website" name="website" placeholder="https://">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje: *</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-send"></i> Enviar Mensaje
+                    </button>
+                    
+                    <div class="success-message" id="successMessage">
+                        <i class="fas fa-check-circle"></i>
+                        ¡Gracias! Tu mensaje ha sido enviado exitosamente. Nos pondremos en contacto contigo pronto.
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Google Maps -->
+        <div class="mapa-section">
+            <h2><i class="fas fa-map-marker-alt"></i> Nuestra Ubicación</h2>
+            <div class="mapa-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.852!2d-77.0276!3d-12.0578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cf0fc1c1e7a1%3A0x7b6f4a4c4b5a8b2a!2sAv.%20Arequipa%201426%2C%20Miraflores%2015074!5e0!3m2!1ses!2spe!4v1609459200000!5m2!1ses!2spe" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>Síguenos en redes sociales:</p>
+        <a href="https://www.facebook.com/asieragency" class="icono-social"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com" class="icono-social"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com" class="icono-social"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com" class="icono-social"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.twitter.com" class="icono-social"><i class="fab fa-twitter"></i></a>
+    </footer>
+    
+    <script>
+        // JavaScript para el formulario de contacto
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simular envío del formulario
+            const submitBtn = document.querySelector('.submit-btn');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Mostrar estado de carga
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Enviando...';
+            submitBtn.disabled = true;
+            
+            // Simular delay de envío
+            setTimeout(function() {
+                // Mostrar mensaje de éxito
+                successMessage.style.display = 'block';
+                
+                // Restaurar botón
+                submitBtn.innerHTML = '<i class="fas fa-send"></i> Enviar Mensaje';
+                submitBtn.disabled = false;
+                
+                // Limpiar formulario
+                document.getElementById('contactForm').reset();
+                
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+                
+            }, 2000);
+        });
+        
+        // Validación en tiempo real para el campo de celular
+        document.getElementById('celular').addEventListener('input', function(e) {
+            const value = e.target.value.replace(/\D/g, ''); // Remover caracteres no numéricos
+            if (value.length > 0) {
+                e.target.value = value;
+            }
+        });
+    </script>
+</body>
+</html>
